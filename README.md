@@ -1,5 +1,10 @@
 # Ontologica — an ontology editor for Python
 
+
+<img width="1024" height="1536" alt="197a19bf84928d6ef410df1f1981b76c382521eba555d9a885884a03a2a1b70c" src="https://github.com/user-attachments/assets/82e893c7-e5d7-46d6-b256-9b64b6daffaa" />
+
+
+
 **Ontologica** is a Python library + CLI for building, exploring, and persisting ontologies composed of **Things**, **Predicates**, and **Statements**.
 
 It is designed to be:
