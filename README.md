@@ -60,12 +60,12 @@ That's basically the "stage 0" roadmap, which I'm working on right now.
 
 ## "Semantic gauging" and iterative, bottom-up design
 
-In this section I will explain why Ontologica is such a useful design tool to structure one's own thinking, using the central technique of "semantic gauging" for iterative ontology design and refinement.
+In this section I will explain why Ontologica is such a useful design tool to structure one's own thinking, using the central technique of "semantic gauging" for iterative ontology design and refinement. This is related to and influenced by the concept of "clause testing" in linguistics.
 
 
 
 
-
+***
 
 
 Ontologica supports:
