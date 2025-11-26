@@ -61,3 +61,19 @@ why fomral ontology:
 
 - precisely structured thinking
 - - sematnic gauging: what do words even mean?
+
+
+
+
+applicaitons
+open source intelligence
+journalism
+social science, like testing asseritons, querying the world in natural language
+building uoru own knwoeldge base
+doing resarch, 
+job huting - finding the jobs
+all knid of data integraionts projects, job postings
+formaliziaotn of law, like data privacy documents
+designing new appps, like a chess playing gmae
+much easier to implant teh same info for llm conversaionts, context
+sving your resume info in a persoan lontolgoy alows you to regenreate your resume in different formats, modify one msall piec eof info, etc. or "slice", just take some parts of the ontology dpeneixng on the job.
