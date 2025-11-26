@@ -1,0 +1,1 @@
+Øhrstrøm, Peter; Schärfe, Henrik; Uckelman, Sara L. "Jacob Lorhard's Ontology: A 17th Century Hypertext on the Reality and Temporality of the World of Intelligibles." In *ICCS 2008*, LNCS 5113, pp. 361–375.
