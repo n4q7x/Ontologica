@@ -164,6 +164,9 @@ If this project interests you, or you’d like to support its future development
 - Propose collaboration or contract work  
 - Offer sponsorship or grants  
 
+[![Buy Me a Coffee](https://img.buymeacoffee.com/button-api/?text=Support%20Ontologica&emoji=☕&slug=your-handle&button_colour=FFDD00&font_colour=000000&font_family=Inter&outline_colour=000000&coffee_colour=ffffff)](https://www.buymeacoffee.com/your-handle)
+[![PayPal](https://img.shields.io/badge/PayPal-Donate-blue.svg)](https://www.paypal.com/donate?hosted_button_id=PLACEHOLDER)
+
 Ontologica will remain open source. Funding helps accelerate its development.
 
 ---
