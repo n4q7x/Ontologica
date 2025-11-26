@@ -7,3 +7,8 @@ name = "ontologica"
 version = "0.1.0"
 description = "A tool for ontological modeling"
 requires-python = ">=3.8"
+
+[project.optional-dependencies]
+dev = [
+    "pytest"
+]

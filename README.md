@@ -5,6 +5,7 @@
 
 # Getting started
 
+
 ```sh
 git clone https://github.com/n4q7x/Ontologica/
 cd Ontologica
@@ -42,10 +43,26 @@ onto.query()
 
 # Development
 
-```sh
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/ontologica.git
+cd ontologica
+```
 
-pytest test.py ?
+2. Create and activate virtual environment:
+```bash
+python3 -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
 
+3. Install in editable mode with dev dependencies:
+```bash
+pip install -e ".[dev]"
+```
+
+4. Run tests:
+```bash
+pytest
 ```
 
 
