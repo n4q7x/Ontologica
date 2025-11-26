@@ -53,3 +53,11 @@ other parts like, about logic, about rdf, et.
 
 
 a data labeling tool for people to contributing ot building a massive pool of facts.
+
+
+
+
+why fomral ontology:
+
+- precisely structured thinking
+- - sematnic gauging: what do words even mean?
