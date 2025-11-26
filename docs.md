@@ -19,3 +19,9 @@ Most applications are some sort of ontological data model. Data integration can 
 
 
 Work in progress.
+
+
+
+Like, taskwarrior: that is an ontology. but the ontolgoy is flawed. our tools do not conforfm to the semantic strucutres in our mind. empahisze that.
+
+promte on stack excange profile for more donors.
