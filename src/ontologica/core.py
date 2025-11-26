@@ -4,11 +4,13 @@ from __future__ import annotations
 
 from dataclasses import dataclass, field
 from itertools import count
-from typing import Set, Iterable, Optional, Union, Dict, Any
+from typing import Set, Iterable, Optional, Union, Dict, Any, TypeVar
 import pickle
 import json
 
 # ---------- core Thing hierarchy ----------
+
+T = TypeVar('T', bound='Thing')
 
 _id_counter = count()
 
@@ -34,7 +36,14 @@ class Statement(Thing):
     subject: Thing
     predicate: Predicate
     obj: Thing
-    # label + id from Thing
+    
+    def __init__(self, label: str, subject: Thing, predicate: Predicate, obj: Thing):
+        # Work around frozen dataclass by using object.__setattr__
+        object.__setattr__(self, 'label', label)
+        object.__setattr__(self, 'id', next(_id_counter))
+        object.__setattr__(self, 'subject', subject)
+        object.__setattr__(self, 'predicate', predicate)
+        object.__setattr__(self, 'obj', obj)
 
 
 Key = Union[Thing, int, str]
@@ -46,10 +55,8 @@ class Ontology:
 
     # --- internal: low-level register for any Thing subclass ---
 
-    def _register(self, thing: Thing) -> Thing:
+    def _register(self, thing: T) -> T:
         """Internal: add an existing Thing/Predicate/Statement to the set."""
-        if not isinstance(thing, Thing):
-            raise TypeError(f"Cannot register non-Thing: {type(thing)}")
         self.things.add(thing)
         return thing
 
@@ -84,7 +91,7 @@ class Ontology:
             for t in self.things:
                 if t.id == key:
                     result.add(t)
-        elif isinstance(key, str):
+        else:  # str
             for t in self.things:
                 if t.label == key:
                     result.add(t)
@@ -289,7 +296,7 @@ class Ontology:
     # --- portable JSON export/import ---
 
     def to_dict(self) -> Dict[str, Any]:
-        data_things = []
+        data_things: list[Dict[str, Any]] = []
         for t in self.things:
             item: Dict[str, Any] = {
                 "id": t.id,
@@ -344,13 +351,16 @@ class Ontology:
             max_id = max(max_id, saved_id)
 
             subj = id_map[item["subject_id"]]
-            pred = id_map[item["predicate_id"]]
+            pred_thing = id_map[item["predicate_id"]]
             obj = id_map[item["object_id"]]
+            
+            if not isinstance(pred_thing, Predicate):
+                raise ValueError(f"Expected Predicate, got {type(pred_thing)}")
 
             stmt = Statement(
                 label=label,
                 subject=subj,
-                predicate=pred,
+                predicate=pred_thing,
                 obj=obj,
             )
             object.__setattr__(stmt, "id", saved_id)

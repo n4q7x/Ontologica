@@ -2,9 +2,9 @@
 
 import argparse
 import os
-from typing import Optional, Union
+from typing import Optional
 
-from ontologica import Ontology, Thing, Predicate, Statement, Key
+from ontologica import Ontology, Predicate
 
 
 def load_or_new(path: str) -> Ontology:
@@ -13,7 +13,7 @@ def load_or_new(path: str) -> Ontology:
     return Ontology()
 
 
-def parse_key(raw: Optional[str]) -> Optional[Key]:
+def parse_key(raw: Optional[str]) -> Optional[str | int]:
     """
     Try to interpret a CLI string as int (id) if it looks like an int,
     otherwise keep it as a string (label).
@@ -66,8 +66,7 @@ def cmd_bind(args: argparse.Namespace) -> None:
 
     stmt = onto.bind(subj, pred, obj)
     onto.save(args.file)
-    print("Added Statement:")
-    onto._pretty_print_thing(stmt)  # reuse pretty printer
+    print(f"Added Statement: {stmt!r}")
 
 
 def cmd_enumerate(args: argparse.Namespace) -> None:
