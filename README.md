@@ -1,8 +1,14 @@
-# Ontologica — an ontology editor for Python
 
 
 <img width="300" height="1000" alt="197a19bf84928d6ef410df1f1981b76c382521eba555d9a885884a03a2a1b70c" src="https://github.com/user-attachments/assets/82e893c7-e5d7-46d6-b256-9b64b6daffaa" />
 
+This repo is the current iterarion of my years-long quest to build formal ontology tools.
+
+The current iteration is the consummation of literally years of self-directed study and research into the necessary topics surrounding formal ontology ("FO"), including logic, linguistics, philosophy, metaphysics, cognitive science, type theory, computer science, category theory, functional programming, web development, databases, the semantic web, and much more.
+
+The design will no doubt continue to change, but this is the closest I have come so far in making something actually usable. My hope is that soon, the development could take a turn into a new stage where new features are added and areas for improvement identified whilst the tool actually has an active, if small, user base.
+
+Ontologica takes design influence from many, many pre-existing ideas, theories, projects, and tools: basic formal ontology, information economy metalanguage, Haskell, Prolog, categorical query language, SQL, basic formal ontology, Frege, Bertrand Russell, Per Martin-Löf, Alan Turing, and so on (this list to be added to). In a way, I cannot claim to have invented anything original, but am only trying to put together the many features and design choices of such things into one system that feels perfect to me, has everything I would like, and not more. This project is intended to be only the beginning of a longer research inquest into seeing how formal ontology can be more common amongst non-technical users and could lead to a different kind of internet called the "datanet". Again, I wish to stress that none of these ideas are new, but I am simply repackaging classic, established ideas like relational data models, graph databases, RDF, the semantic web, etc, but trying to breathe new life into them, synthesize them and put my own finishing touches on them. I would like to emphasize that one of the most important features an ontology system should have, in my opinion, is **reification** (discussed further, below).
 
 
 **Ontologica** is a Python library + CLI for building, exploring, and persisting ontologies composed of **Things**, **Predicates**, and **Statements**.
