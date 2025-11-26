@@ -26,21 +26,6 @@ I decided to develop it in Python because it is the language I am most experienc
 Ontologica is for creating **persistent** ontologies - people are intended to use it to make ontologies that they will use in their work and daily lives. Building a good ontology can mean the refimement of a precious data artifact. That is why ontologica will have features making it similar to a database system or language. Because it emphasizes readability and portability, it currently persists ontologies in a simple text file format. Time will tell if eventually the goal would be to be able to export (and import, and manipulate between) many formats like JSON, Turtle, SQLite, plaintext, and so on.
 
 
-**I for building, exploring, and persisting ontologies composed of **Things**, **Predicates**, and **Statements**.
-
-It is designed to be:
-
-- **Extremely readable** — the entire core fits into a few hundred lines of clear Python  
-- **Lightweight** — no dependencies beyond the standard library  
-- **Programmable** — import the module to build ontologies inside Python  
-- **Usable** — includes a CLI for building and inspecting ontologies interactively  
-- **Portable** — export/import ontologies as JSON  
-- **Persistent** — save/load via pickle for fast REPL workflows  
-- **Extensible** — structured cleanly so new features can be added without pain  
-
-Ontologica is being actively developed by **Julius Hamilton**, who is seeking collaborators, users, and funding to take this further. The project is fully open source and intended to remain that way.
-
----
 
 ## What does it do?
 
