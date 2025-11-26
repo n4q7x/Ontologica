@@ -4,7 +4,7 @@
 </p>
 This repo is the current iteration of my years-long quest to build formal ontology tools.
 
-The current iteration is the consummation of literally years of self-directed study and research into the necessary topics surrounding formal ontology ("FO"), including logic, linguistics, philosophy, metaphysics, cognitive science, type theory, computer science, category theory, functional programming, web development, databases, the semantic web, and much more.
+The current iteration is the consummation of years of self-directed study and research into the necessary topics surrounding formal ontology ("FO"), including logic, linguistics, philosophy, metaphysics, cognitive science, type theory, computer science, category theory, functional programming, web development, databases, the semantic web, and much more.
 
 The design will no doubt continue to change, but this is the closest I have come so far in making something actually usable. My hope is that soon, the development could take a turn into a new stage where new features are added and areas for improvement identified whilst the tool actually has an active, if small, user base.
 
