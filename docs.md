@@ -31,6 +31,19 @@ promte on stack excange profile for more donors.
 
 
 
+
+"You can plant an idea in the garden of your mind."
+
+
+
+connect to llms as backend for ontological rag.
+
+or llm tool use.
+
+
+
+
+
 other parts like, about logic, about rdf, et.
 
 
