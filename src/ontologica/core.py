@@ -4,7 +4,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass, field
 from itertools import count
-from typing import Set, Iterable, Optional, Union, Dict, Any, TypeVar
+from typing import Iterable, Optional, Union, Dict, Any, TypeVar
 import pickle
 import json
 
@@ -13,6 +13,10 @@ import json
 T = TypeVar('T', bound='Thing')
 
 _id_counter = count()
+
+
+def _thing_set_factory() -> set[Thing]:  # pragma: no cover - trivial helper
+    return set()
 
 
 @dataclass(frozen=True)
@@ -51,7 +55,7 @@ Key = Union[Thing, int, str]
 
 @dataclass
 class Ontology:
-    things: Set[Thing] = field(default_factory=set)
+    things: set[Thing] = field(default_factory=_thing_set_factory)
 
     # --- internal: low-level register for any Thing subclass ---
 
@@ -77,7 +81,7 @@ class Ontology:
 
     # --- internal helper: resolve Key -> *all* matching Things ---
 
-    def _resolve_things(self, key: Key) -> Set[Thing]:
+    def _resolve_things(self, key: Key) -> set[Thing]:
         """
         Return all Things matching this key:
         - Thing -> {that thing}
@@ -86,7 +90,7 @@ class Ontology:
         """
         if isinstance(key, Thing):
             return {key}
-        result: Set[Thing] = set()
+        result: set[Thing] = set()
         if isinstance(key, int):
             for t in self.things:
                 if t.id == key:
@@ -148,7 +152,7 @@ class Ontology:
 
     # --- internal slice ---
 
-    def _slice(self, key: Key, attr: str) -> Set[Statement]:
+    def _slice(self, key: Key, attr: str) -> set[Statement]:
         """
         Internal slice helper:
         attr is 'subject', 'predicate', or 'obj'.
@@ -159,7 +163,7 @@ class Ontology:
         if not targets:
             return set()
 
-        result: Set[Statement] = set()
+        result: set[Statement] = set()
         for t in self.things:
             if isinstance(t, Statement) and getattr(t, attr) in targets:
                 result.add(t)
@@ -218,10 +222,10 @@ class Ontology:
           * non-Statement Things on one line
           * Statements as multi-line blocks with indented components
         """
-        results: Set[Thing] = set()
+        results: set[Thing] = set()
 
         # 1) Filters on subject / predicate / object -> intersection of matching statements
-        stmt_filters: list[Set[Statement]] = []
+        stmt_filters: list[set[Statement]] = []
 
         if subject is not None:
             stmt_filters.append(self._slice(subject, "subject"))
