@@ -79,7 +79,43 @@ This document is for designing and prototyping what it will actually be to use O
 >>> integrated = Ontology.integrate(onto1, onto2, onto3, schema="mapping.cql")
 ```
 
+## Adding Elements Efficiently
 
+
+## Modifying and Editing (what entities added, which predicates hold true)
+
+
+
+## Importing existing vocabularies from standardized lexicons hosted online at ontologi.ca (???)
+
+
+
+## dump your ontology locally to a file
+
+## send your ontology over the internet in .json?
+
+## turn your ontology into a semantic web page, serving live
+
+## link your ontology to someone else's. now changed are synced, must be kept up to date, etc.
+
+
+## import logic features
+
+### see which nodes have similar neighborhoods. type inference.
+
+### see the first order logical theory describing your ontology.
+
+### run integrity constraints / checks. ontology must be complete. etc. green check marks at cli tell you that you cannot push / publish your ontology to the datanet until it has attained completeness.
+
+### examples of the kinds of queries you can write, beyond lame obvious ones. its not about "what is this person's name"? it's about "find me people (in the world, on the internet) with such and such a description. etc.
+
+
+
+# longterm vision for interactive usage
+
+## public a data feed to the datanet
+
+## walk / traverse / query net for certain questions
 
 
 
