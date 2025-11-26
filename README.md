@@ -3,8 +3,15 @@
 <img width="300" height="1000" alt="197a19bf84928d6ef410df1f1981b76c382521eba555d9a885884a03a2a1b70c" src="https://github.com/user-attachments/assets/82e893c7-e5d7-46d6-b256-9b64b6daffaa" />
 </p>
 
+# Getting started
 
-## Example
+```sh
+git clone https://github.com/n4q7x/Ontologica/
+cd Ontologica
+python3 cli.py
+```
+
+## Example use
 
 ```python
 from ontology import Ontology
