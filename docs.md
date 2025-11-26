@@ -48,3 +48,8 @@ other parts like, about logic, about rdf, et.
 
 
 "manifesto.json" - manifesto
+
+
+
+
+a data labeling tool for people to contributing ot building a massive pool of facts.
