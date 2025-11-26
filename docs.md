@@ -32,3 +32,6 @@ promte on stack excange profile for more donors.
 
 
 other parts like, about logic, about rdf, et.
+
+
+"manifesto.json" - manifesto
