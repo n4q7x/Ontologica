@@ -1,6 +1,6 @@
-# Ontologica — A Minimal, Readable, Extensible Ontology Engine for Python
+# Ontologica — an ontology editor for Python
 
-**Ontologica** is a small, elegant Python library + CLI for building, exploring, and persisting ontologies composed of **Things**, **Predicates**, and **Statements**.
+**Ontologica** is a Python library + CLI for building, exploring, and persisting ontologies composed of **Things**, **Predicates**, and **Statements**.
 
 It is designed to be:
 
