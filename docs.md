@@ -21,7 +21,14 @@ Most applications are some sort of ontological data model. Data integration can 
 Work in progress.
 
 
+note how there are almost no good fully open source eontology tools. like graphdb, ontotext. all for enterise. "formal ontology for th emasses" becuas we are makign tmainstream. the smeanti web is for scienctist, it also faile do bridge the gpa.
+
+
 
 Like, taskwarrior: that is an ontology. but the ontolgoy is flawed. our tools do not conforfm to the semantic strucutres in our mind. empahisze that.
 
 promte on stack excange profile for more donors.
+
+
+
+other parts like, about logic, about rdf, et.
