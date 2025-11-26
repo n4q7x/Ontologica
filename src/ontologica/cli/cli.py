@@ -4,7 +4,7 @@ import argparse
 import os
 from typing import Optional, Union
 
-from core.core import Ontology, Thing, Predicate, Statement, Key
+from ontologica import Ontology, Thing, Predicate, Statement, Key
 
 
 def load_or_new(path: str) -> Ontology:
