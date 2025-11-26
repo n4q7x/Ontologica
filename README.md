@@ -56,7 +56,11 @@ The most essential features intended to be supported (many of which currently ar
 - ease for switching back and forth between different ontology files, syncing in the cloud, and critically, merging or splitting and refactoring ontologies into separate files
 
 
-That's basically the "stage 0" roadmap, which I'm refining right now.
+That's basically the "stage 0" roadmap, which I'm working on right now.
+
+## "Semantic gauging" and iterative, bottom-up design
+
+In this section I will explain why Ontologica is such a useful design tool to structure one's own thinking, using the central technique of "semantic gauging" for iterative ontology design and refinement.
 
 
 
