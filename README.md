@@ -8,12 +8,13 @@
 ```sh
 git clone https://github.com/n4q7x/Ontologica/
 cd Ontologica
-python3 cli.py
+python3 src/cli/cli.py
 ```
 
 ## Example use
 
 ```python
+
 from ontology import Ontology
 
 onto = Ontology()
@@ -25,25 +26,29 @@ likes = onto.add_predicate("likes")
 onto.bind(alice, likes, bob)
 
 onto.show()
+
+onto.is_complete?()
+
+onto.enumerate()
+
+onto.slice()
+
+onto.query()
+
+
 ```
 
-Sample output:
+
+
+# Development
+
+```sh
+
+pytest test.py ?
 
 ```
-Thing(label='Alice', id=0)
 
-Thing(label='Bob', id=1)
 
-Predicate(label='likes', id=2)
-
-Statement(label='Alice likes Bob', id=3)
-  subject:
-      Thing(label='Alice', id=0)
-  predicate:
-      Predicate(label='likes', id=2)
-  object:
-      Thing(label='Bob', id=1)
-```
 
 ---
 
