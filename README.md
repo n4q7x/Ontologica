@@ -9,10 +9,15 @@
 ```sh
 git clone https://github.com/n4q7x/Ontologica/
 cd Ontologica
+python3 -m venv .venv
+source .venv/bin/activate
+pip install pytest
+pytest
 python3 src/cli/cli.py
+
 ```
 
-## Example use
+## Abstract example
 
 ```python
 
@@ -20,99 +25,44 @@ from ontology import Ontology
 
 onto = Ontology()
 
-alice = onto.add("Alice")
-bob   = onto.add("Bob")
-likes = onto.add_predicate("likes")
-
-onto.bind(alice, likes, bob)
-
-onto.show()
-
-onto.is_complete?()
+e1 = onto.add("entity1")
+e2   = onto.add("entity2")
+p1 = onto.add_predicate("pred1")
 
 onto.enumerate()
 
-onto.slice()
+onto.show()
 
-onto.query()
+onto.classify((e1, p1, e2) = True, ...)
+
+onto.check_completeness()
+
+onto.push() / write()
+
+onto.slice(predicate: "p1")
+
+onto.query("...")
+
+onto.assert(forall, (subject, is_pred, some_object), (subject, is_pred, object))
+
+```
+
+## Specific Example
+
+```python
+
+Using Ontologica in conjunction with a web crawler, maybe Spacy NER, to load and model-check an ontology about something (i.e., politicians):
+
+
 
 
 ```
 
 
-
-# Development
-
-1. Clone the repository:
-```bash
-git clone https://github.com/yourusername/ontologica.git
-cd ontologica
-```
-
-2. Create and activate virtual environment:
-```bash
-python3 -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-```
-
-3. Install in editable mode with dev dependencies:
-```bash
-pip install -e ".[dev]"
-```
-
-4. Run tests:
-```bash
-pytest
-```
-
-
-
----
 
 ## CLI
 
-Ontologica ships with a command line tool:
-
-```bash
-python ontology_cli.py new -f myonto.pkl
-python ontology_cli.py add -f myonto.pkl "Alice"
-python ontology_cli.py add-predicate -f myonto.pkl "likes"
-python ontology_cli.py bind -f myonto.pkl "Alice" "likes" "Bob"
-python ontology_cli.py show -f myonto.pkl
-python ontology_cli.py export-json -f myonto.pkl myonto.json
-```
-
----
-
-## Installation
-
-For now, clone the repository:
-
-```bash
-git clone https://github.com/<yourname>/ontologica.git
-cd ontologica
-```
-
-Eventually this will be published on PyPI as:
-
-```bash
-pip install ontologica
-```
-
-(coming soon)
-
----
-
-## Project Structure
-
-```
-ontology.py        # main module
-ontology_cli.py    # CLI tool
-test_ontology.py   # basic tests
-README.md          # this file
-```
-
----
+The CLI is a work in progress. It will be a REPL, where you launch it and can write interactive commands.
 
 ## Goals & Philosophy
 
