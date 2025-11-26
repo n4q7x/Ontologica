@@ -16,7 +16,7 @@ Ontologica is being actively developed by **Julius Hamilton**, who is seeking co
 
 ---
 
-## ⭐️ What does it do?
+## What does it do?
 
 Ontologica models a tiny but expressive universe of entities:
 
@@ -44,7 +44,7 @@ Ontologica supports:
 
 ---
 
-## 🧩 Example (Python)
+## Example
 
 ```python
 from ontology import Ontology
@@ -80,7 +80,7 @@ Statement(label='Alice likes Bob', id=3)
 
 ---
 
-## 🖥 CLI
+## CLI
 
 Ontologica ships with a command line tool:
 
@@ -95,7 +95,7 @@ python ontology_cli.py export-json -f myonto.pkl myonto.json
 
 ---
 
-## 📦 Installation
+## Installation
 
 For now, clone the repository:
 
@@ -114,7 +114,7 @@ pip install ontologica
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 ontology.py        # main module
@@ -125,7 +125,7 @@ README.md          # this file
 
 ---
 
-## 🔧 Goals & Philosophy
+## Goals & Philosophy
 
 Ontologica aims to become:
 
@@ -148,7 +148,7 @@ As the project grows, the goal is to maintain:
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome. If you’d like to help with:
 
@@ -164,7 +164,7 @@ Contributions are welcome. If you’d like to help with:
 
 ---
 
-## 💸 Funding & Support
+## Funding & Support
 
 **I (Julius Hamilton) am actively looking for funding, sponsorship, or employment opportunities related to ontology work, logic engines, knowledge-representation tools, or Python systems programming.**
 
@@ -179,6 +179,6 @@ Ontologica will remain open source. Funding helps accelerate its development.
 
 ---
 
-## 📄 License
+## License
 
-MIT License (or whichever you choose)
+GPL-3.0
