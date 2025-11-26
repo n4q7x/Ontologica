@@ -3,7 +3,7 @@
 import os
 import tempfile
 
-from src.core.ontology import Ontology, Thing, Predicate, Statement
+from core.core import Ontology, Thing, Predicate, Statement
 
 
 def test_add_and_add_predicate():
