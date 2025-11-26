@@ -26,20 +26,38 @@ I decided to develop it in Python because it is the language I am most experienc
 Ontologica is for creating **persistent** ontologies - people are intended to use it to make ontologies that they will use in their work and daily lives. Building a good ontology can mean the refimement of a precious data artifact. That is why ontologica will have features making it similar to a database system or language. Because it emphasizes readability and portability, it currently persists ontologies in a simple text file format. Time will tell if eventually the goal would be to be able to export (and import, and manipulate between) many formats like JSON, Turtle, SQLite, plaintext, and so on.
 
 
+## Installation and demo of current version (0.1.0)
+
+For now, you can clone the repo and run its scripts yourself in Python. Soon, hopefully it will be packaged for pip.
+
+
+
 
 ## What does it do?
 
-Ontologica models a tiny but expressive universe of entities:
+The most essential features intended to be supported (many of which currently are) are:
 
-- **Thing** — atomic element (e.g. "Alice")
-- **Predicate** — binary relation (e.g. "likes")
-- **Statement** — a triple `(subject, predicate, object)`  
-  - each one is itself a Thing  
-  - automatically gets a fused label like "Alice likes Bob"
+- adding new records into an ontology
+- deleting records from an ontology
+- reverting changes
+- modifying or editing records
+- enumerating new entries
+- classifying entries
+- querying records
+- automatic inference
+- functions which check how complete your ontology is
+- a logic engine which infers / generates the theory of your ontology
+- a comfortable GUI and CLI tool
+- ease for switching back and forth between different ontology files, syncing in the cloud, and critically, merging or splitting and refactoring ontologies into separate files
 
-The core container is:
 
-- **Ontology** — a set of all Things, including Predicates & Statements
+That's basically the "stage 0" roadmap, which I'm refining right now.
+
+
+
+
+
+
 
 Ontologica supports:
 
