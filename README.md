@@ -1,3 +1,4 @@
+![Logo](logo.png)
 
 
 Ontologica is work-in-progress formal ontology tool.
