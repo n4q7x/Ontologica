@@ -1,19 +1,18 @@
 <div align="center">
-  <img src="logo.png" width="400" style="padding: 20px;">
+  <img src="logo.png" width="400" style="padding: 40px;">
 </div>
 
 
-Ontologica is work-in-progress formal ontology tool.
-
 # Table of Contents
 
+- [About](#about)
+- [Background](#background)
+- [Uses](#uses)
 - [Features](#features)
 - [Design](#design)
 - [Prototypes](#prototypes)
 - [Examples](#examples)
 - [Motivation](#motivation)
-- [Background](#background)
-- [About](#about)
 - [History](#history)
 - [To Do](#to-do)
 - [Questions](#questions)
@@ -26,6 +25,29 @@ Ontologica is work-in-progress formal ontology tool.
 - [Pip](#pip)
 - [Uses](#uses)
 - [Related tools](#related-tools)
+- [Goals](#goals)
+- [Funding](#funding)
+- [Research](#research)
+
+
+
+# About
+
+Ontologica is a formal ontology tool. It is a work in progress. It is by Julius Hamilton. It is programmed in Python. 
+
+# Background
+
+My interest in knowledge graphs and formal ontologies took hold in 2023 with the advent of user-facing large language models (namely, ChatGPT). Though I was interested in computer programming, philosophy, linguistics, semantic precision, rigorous analysis, logical reasoning, the formalization of meaning, and the automation of natural language related-processes before that, there was something about LLMs that really captured my imagination and set me on a research journey to try to think about how we could use deterministic computer programs to draw logical inferences based on conceptual models of reality. I realized that I needed to understand the foundations of mathematics and logic much better, so I have been studying those for the past 3 years.
+
+# Uses
+
+Formal ontologies can be used for:
+
+- recording information
+- retrieving information
+- checking for logical consistency
+- automating processes
+- discovering new things
 
 
 # Features
@@ -41,7 +63,7 @@ Ontologica is work-in-progress formal ontology tool.
 
 # Design
 
-Ontologica aims to set a new standard for the usability of formal ontology.
+Ontologica aims to set a new standard for the usability of formal ontology tools.
 
 # Prototypes
 
