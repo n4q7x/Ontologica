@@ -5,10 +5,11 @@
 
 Ontologica is work-in-progress formal ontology tool.
 
-## Table of Contents
+# Table of Contents
 
-- Features
-- Design
+- [Features](#features)
+- [Design](#design)
+- [Examples](#examples)
 - Motivation
 - Background
 - About
