@@ -2,3 +2,4 @@
 *.egg-info
 .pytest*
 __pycache__
+.DS_Store

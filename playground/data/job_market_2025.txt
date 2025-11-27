@@ -1,0 +1,55 @@
+# Job Market 2025 Dataset (sample)
+# Format: (subject, predicate, object)
+
+(Software Engineer, demand, High)
+(Software Engineer, average_salary, 130000)
+(Software Engineer, required_skills, Python)
+(Software Engineer, required_skills, Cloud)
+(Software Engineer, required_skills, AI)
+
+(Data Scientist, demand, High)
+(Data Scientist, average_salary, 125000)
+(Data Scientist, required_skills, Python)
+(Data Scientist, required_skills, Statistics)
+(Data Scientist, required_skills, Machine Learning)
+
+(Nurse, demand, High)
+(Nurse, average_salary, 80000)
+(Nurse, required_skills, Patient Care)
+(Nurse, required_skills, Certification)
+
+(Teacher, demand, Moderate)
+(Teacher, average_salary, 60000)
+(Teacher, required_skills, Communication)
+(Teacher, required_skills, Subject Knowledge)
+
+(Renewable Energy Technician, demand, Growing)
+(Renewable Energy Technician, average_salary, 75000)
+(Renewable Energy Technician, required_skills, Electrical)
+(Renewable Energy Technician, required_skills, Solar)
+(Renewable Energy Technician, required_skills, Wind)
+
+(Cybersecurity Analyst, demand, High)
+(Cybersecurity Analyst, average_salary, 120000)
+(Cybersecurity Analyst, required_skills, Security)
+(Cybersecurity Analyst, required_skills, Networking)
+
+(Truck Driver, demand, Moderate)
+(Truck Driver, average_salary, 55000)
+(Truck Driver, required_skills, Driving)
+(Truck Driver, required_skills, Licensing)
+
+(Healthcare Administrator, demand, Moderate)
+(Healthcare Administrator, average_salary, 95000)
+(Healthcare Administrator, required_skills, Management)
+(Healthcare Administrator, required_skills, Healthcare)
+
+(Construction Worker, demand, Moderate)
+(Construction Worker, average_salary, 50000)
+(Construction Worker, required_skills, Physical Labor)
+(Construction Worker, required_skills, Safety)
+
+(UX Designer, demand, Growing)
+(UX Designer, average_salary, 105000)
+(UX Designer, required_skills, Design)
+(UX Designer, required_skills, Research)

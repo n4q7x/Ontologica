@@ -1,0 +1,52 @@
+# Birds Dataset (sample)
+# Format: (subject, predicate, object)
+
+(Bald Eagle, species, Haliaeetus leucocephalus)
+(Bald Eagle, habitat, North America)
+(Bald Eagle, diet, Carnivore)
+(Bald Eagle, conservation_status, Least Concern)
+
+(Peregrine Falcon, species, Falco peregrinus)
+(Peregrine Falcon, habitat, Worldwide)
+(Peregrine Falcon, diet, Carnivore)
+(Peregrine Falcon, conservation_status, Least Concern)
+
+(Emperor Penguin, species, Aptenodytes forsteri)
+(Emperor Penguin, habitat, Antarctica)
+(Emperor Penguin, diet, Carnivore)
+(Emperor Penguin, conservation_status, Near Threatened)
+
+(African Grey Parrot, species, Psittacus erithacus)
+(African Grey Parrot, habitat, Africa)
+(African Grey Parrot, diet, Herbivore)
+(African Grey Parrot, conservation_status, Endangered)
+
+(House Sparrow, species, Passer domesticus)
+(House Sparrow, habitat, Worldwide)
+(House Sparrow, diet, Omnivore)
+(House Sparrow, conservation_status, Least Concern)
+
+(Great Horned Owl, species, Bubo virginianus)
+(Great Horned Owl, habitat, Americas)
+(Great Horned Owl, diet, Carnivore)
+(Great Horned Owl, conservation_status, Least Concern)
+
+(Scarlet Macaw, species, Ara macao)
+(Scarlet Macaw, habitat, Central and South America)
+(Scarlet Macaw, diet, Herbivore)
+(Scarlet Macaw, conservation_status, Least Concern)
+
+(Snowy Owl, species, Bubo scandiacus)
+(Snowy Owl, habitat, Arctic regions)
+(Snowy Owl, diet, Carnivore)
+(Snowy Owl, conservation_status, Least Concern)
+
+(Kiwi, species, Apteryx)
+(Kiwi, habitat, New Zealand)
+(Kiwi, diet, Omnivore)
+(Kiwi, conservation_status, Vulnerable)
+
+(California Condor, species, Gymnogyps californianus)
+(California Condor, habitat, California)
+(California Condor, diet, Carnivore)
+(California Condor, conservation_status, Critically Endangered)
