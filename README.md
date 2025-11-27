@@ -34,43 +34,47 @@
 
 # About
 
-- Ontologica is a formal ontology tool.
-- Ontologica is a formal ontology editor.
-- Ontologica can visualize formal ontologies.
 - Ontologica can automate inferences over ontologies.
-- Ontologica can check for logical inconsistencies.
-- Ontologica can model natural language discourse.
-- Ontologica can be used to create models of reality.
-- Ontologica can be used to create models of the world.
-- Ontologica can be used to create models of society.
-- You can ask questions by querying your ontology in Ontologica.
-- You can become more aware of what you yet do not know, in Ontologica.
-- You can identify gaps in your knowledge, in Ontologica.
-- Ontologica can be used to organize very large bodies of information.
-- Ontologica can be used to organize very large bodies of data.
-- Ontologica can be used to organize very large bodies of knowledge.
-- Ontologica can be used to help one think more systematically.
-- Ontologica can be used to help one think more rigorously.
-- Ontologica can be used to help one think more precisely.
-- Ontologica can be used to help one think more accurately.
-- You can systematically pinpoint avenues for completing missing information in Ontologica.
-- Ontologica can structure projects and workflows.
+- Ontologica can be used as a database.
+- Ontologica can be used as a knowledge base.
 - Ontologica can be used as a research tool.
+- Ontologica can be used as a semantic web tool.
 - Ontologica can be used as an aid to clear thinking.
-- Ontologica can be used as an aid to insightful thinking.
 - Ontologica can be used as an aid to creative thinking.
-- Ontologica is programmed in Python.
+- Ontologica can be used as an aid to insightful thinking.
+- Ontologica can be used as an automated theorem prover.
+- Ontologica can be used as the backend of a RAG LLM system.
+- Ontologica can be used to create models of reality.
+- Ontologica can be used to create models of society.
+- Ontologica can be used to create models of the world.
+- Ontologica can be used to help one think more accurately.
+- Ontologica can be used to help one think more precisely.
+- Ontologica can be used to help one think more rigorously.
+- Ontologica can be used to help one think more systematically.
+- Ontologica can be used to organize very large bodies of data.
+- Ontologica can be used to organize very large bodies of information.
+- Ontologica can be used to organize very large bodies of knowledge.
+- Ontologica can check for logical inconsistencies.
+- Ontologica can integrate between different data schemas.
+- Ontologica can model natural language discourse.
+- Ontologica can structure projects and workflows.
+- Ontologica can visualize formal ontologies.
+- Ontologica is a formal ontology editor.
+- Ontologica is a formal ontology tool.
 - Ontologica is a work in progress.
 - Ontologica is by Julius Hamilton.
-- Ontologica can be used as a knowledge base.
-- Ontologica can be used as the backend of a RAG LLM system.
-- Ontologica can be used as a database.
-- Ontologica can be used as an automated theorem prover.
-- You can model any kind of conceptual domain in Ontologica.
+- Ontologica is interoperable with RDF.
+- Ontologica is programmed in Python.
+- You can ask questions by querying your ontology in Ontologica.
+- You can become more aware of what you yet do not know, in Ontologica.
 - You can create models of map data in Ontologica.
+- You can identify gaps in your knowledge, in Ontologica.
+- You can model any kind of conceptual domain in Ontologica.
+- You can systematically pinpoint avenues for completing missing information in Ontologica.
 - You can use Ontologica for open-source intelligence.
-- You can use Ontologica to formalize rule systems.
 - You can use Ontologica to formalize law.
+- You can use Ontologica to formalize rule systems.
+
 
 # Background
 
