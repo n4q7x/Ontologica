@@ -1,6 +1,0 @@
-{
-    "files.exclude": {
-        "LICENSE": true
-    },
-    "python.analysis.typeCheckingMode": "strict"
-}
