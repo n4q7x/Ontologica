@@ -30,7 +30,7 @@
 - [Theory](#theory)
 - [To Do](#to-do)
 - [Uses](#uses)
-
+- [Quotes](#quotes)
 
 
 # About
@@ -197,3 +197,7 @@ Formal ontologies can be used for:
 - automating processes
 - discovering new things
 
+
+# Quotes
+
+- Bertrand russell, the new logic makes us more creative rather than constraining our thought.
