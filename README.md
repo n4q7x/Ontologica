@@ -1,4 +1,4 @@
-![Logo](logo.png)
+<img src="logo.png" alt="Logo" width="200">
 
 
 Ontologica is work-in-progress formal ontology tool.
