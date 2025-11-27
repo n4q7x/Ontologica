@@ -9,38 +9,50 @@ Ontologica is work-in-progress formal ontology tool.
 
 - [Features](#features)
 - [Design](#design)
+- [Prototypes](#prototypes)
 - [Examples](#examples)
-- Motivation
-- Background
-- About
-- History
-- To Do
-- Questions
-- Description
-- Code
-- Data Model
-- Conceptual Foundation
-- Documentation
-- Homepage
-- Pip
-- Uses
-- Related tools
+- [Motivation](#motivation)
+- [Background](#background)
+- [About](#about)
+- [History](#history)
+- [To Do](#to-do)
+- [Questions](#questions)
+- [Description](#description)
+- [Code](#code)
+- [Data Model](#data-model)
+- [Conceptual Foundation](#conceptual-foundation)
+- [Documentation](#documentation)
+- [Homepage](#homepage)
+- [Pip](#pip)
+- [Uses](#uses)
+- [Related tools](#related-tools)
 
 
 # Features
-- add records to ontology
-- remove records from ontology
-- formal definition of data model
+- create ontologies
+- delete ontologies
+- edit ontologies
+- add records to ontologies
+- delete records from ontologies
 - modify records in ontology
-- records have types
-- automation
-  - add records with functions
-    - add well formed statements
-    - add true statements
-- Python API
-- cli tool
-- GUI tool
-- data labeling GUI tool
+- run functions over ontologies
+- export data
+- import data
+
+# Design
+
+Ontologica aims to set a new standard for formal ontology tools in terms of usability and design.
+
+# Prototypes
+
+The following are envisioned examples of what it would be like to use Ontologica. These examples will then be implemented in code.
+
+## Example 1: Create an Ontology from scratch
+
+```python
+
+
+```
 
 # To Do
 
