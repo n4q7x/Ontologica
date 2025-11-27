@@ -16,6 +16,7 @@
 - [Examples](#examples)
 - [Features](#features)
 - [Formalization](#formalization)
+- [Functions](#functions)
 - [Funding](#funding)
 - [Goals](#goals)
 - [History](#history)
@@ -87,6 +88,24 @@ For the conceptual foundations of Ontologica, see `/docs/conceptualfoundations.m
 
 # Data model
 
+When you create an ontology, you essentially create an empty set, *Things*.
+
+In this formalization of Ontologica, we choose to model the ontology as a set, because:
+
+- the order of the elements does not matter
+- we do not allow duplicate elements (i.e., "indiscernibles are identical")
+
+When you add a thing to an ontology, there are two ways of thinking about this.
+
+One is, the ontology stays the same, but something *about* it (i.e., the records that are a part of it) has changed. But this is still a change in *what exists*, because it means the *fact* "such as such records are in *this ontology*" no longer exists in this ontology, whereas some new fact does.
+
+The second is, this is a different ontology. The first ontology was an argument to a function that creates a new ontology. The old ontology has been consumed, and no longer exists.
+
+We can always choose to move back and forth between the perspective of "it's the same thing, but something about it changed" and "we deleted the old thing and created a new one".
+
+
+
+
 # Design
 
 Ontologica aims to set a new standard for the usability of formal ontology tools.
@@ -102,6 +121,25 @@ Ontologica aims to set a new standard for the usability of formal ontology tools
 - run functions over ontologies
 - export data
 - import data
+
+
+
+
+# Functions
+
+
+This is the current forefront of where my theorization is taking me.
+
+I think there are a couple different ways we can think about functions.
+
+Sometimes, we can act on a certain object, and change something about it. Sometimes, the way it changes, in regard to that action, is deterministic. There is only one way it will change. Hence, there is a functional relationship between what action we choose, and what change will occur.
+
+When we act on an object, we are choosing a type of action. Given that the action is classified by a type, it naturally opens the possibility that that action has an identity of its own; it can exist independently from the thing it is acting on; and in fact, it can be applied to other things, as well. This is how we can move from the perspective of an action to a function: a single action on a single object implies in the background a general function which for any entity of that type, acts on it in the same way.
+
+
+The problem with trying to reduce the notion of action as composed of more fundamental actions, just like entities and predicates, we end up still having to still choose some kind of primitive action, like string concatenation, or a successor function, or projection functions in the idea of computable numbers, etc.
+
+WIP
 
 
 
