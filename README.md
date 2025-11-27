@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="logo.png" width="400">
+  <img src="logo.png" width="400" style="padding: 20px;">
 </div>
 
 
@@ -34,14 +34,14 @@ Ontologica is work-in-progress formal ontology tool.
 - edit ontologies
 - add records to ontologies
 - delete records from ontologies
-- modify records in ontology
+- modify records in ontologies
 - run functions over ontologies
 - export data
 - import data
 
 # Design
 
-Ontologica aims to set a new standard for formal ontology tools in terms of usability and design.
+Ontologica aims to set a new standard for the usability of formal ontology.
 
 # Prototypes
 
@@ -51,6 +51,9 @@ The following are envisioned examples of what it would be like to use Ontologica
 
 ```python
 
+import ontology
+
+my_ontology = ontology.Ontology()
 
 ```
 
