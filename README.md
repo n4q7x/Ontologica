@@ -1,4 +1,6 @@
-<img src="logo.png" alt="Logo" width="200">
+<div align="center">
+  <img src="logo.png" width="200">
+</div>
 
 
 Ontologica is work-in-progress formal ontology tool.
