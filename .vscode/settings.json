@@ -1,5 +1,8 @@
 {
     "python.terminal.activateEnvironment": true,
     "python.defaultInterpreterPath": ".venv/bin/python",
-    "python-envs.pythonProjects": []
+    "python-envs.pythonProjects": [],
+    "editor.cursorSurroundingLines": 0,
+"editor.cursorRevealEnabled": false,
+"workbench.editor.revealIfOpen": false
 }
