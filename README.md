@@ -28,6 +28,7 @@
 - [Related tools](#related-tools)
 - [Research](#research)
 - [Theory](#theory)
+- [Tests](#tests)
 - [To Do](#to-do)
 - [Uses](#uses)
 - [Quotes](#quotes)
@@ -162,11 +163,26 @@ I believe that formal ontologies can make the world more:
 - safe
 - happy
 
+# Related tools
+
+- Spacy
+- CQL
+- Protege
+- Haskell
+- Palantir
+- Prolog
+- Neo4j
+- Gremlin
+- GraphQL (?)
+- SQL
+
 # Prototypes
 
 The following are envisioned examples of what it would be like to use Ontologica. These examples will then be implemented in code.
 
-## Example 1: Create an Ontology from scratch
+## Example 1
+
+Create an Ontology from scratch:
 
 ```python
 
@@ -176,14 +192,24 @@ my_ontology = ontology.Ontology()
 
 ```
 
+## Example 2
 
+Creating an ontology by loading from a local data tile.
+
+
+# Similar tools
+
+
+# Tests
+
+## 
 
 
 # To Do
 
 - refactor repo heavily
 
-
+# Tools
 
 
 # Uses
