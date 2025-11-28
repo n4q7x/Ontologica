@@ -1,0 +1,29 @@
+{
+  "nodes": [
+    { "id": 1, "kind": "Atom",      "label": "Alice" },
+    { "id": 2, "kind": "Atom",      "label": "Paris" },
+    { "id": 3, "kind": "Atom",      "label": "Human" },
+
+    { "id": 10, "kind": "Predicate", "label": "type" },
+    { "id": 11, "kind": "Predicate", "label": "livesIn" }
+  ],
+
+  "triples": [
+    {
+      "id": 100,
+      "kind": "Triple",
+      "subject": 1,
+      "predicate": 10,
+      "object": 3,
+      "label": "Alice is a Human"
+    },
+    {
+      "id": 101,
+      "kind": "Triple",
+      "subject": 1,
+      "predicate": 11,
+      "object": 2,
+      "label": "Alice lives in Paris"
+    }
+  ]
+}
