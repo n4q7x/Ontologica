@@ -159,6 +159,19 @@ hr {
 </header>
 
 
+
+
+<nav class="toc">
+  <h2>Contents</h2>
+  <ul>
+    <li><a href="#intro">Introduction</a></li>
+    <li><a href="#axiom1">Axiom 1</a></li>
+    <li><a href="#axiom2">Axiom 2</a></li>
+    <li><a href="#triples">The Problem with Triples</a></li>
+  </ul>
+</nav>
+
+
 <!--or, ontology specification? make it iso compliant?-->
 
 
@@ -177,7 +190,7 @@ hr {
 
 
 
-<h2>Introduction</h2>
+<h2 id="intro">Introduction</h2>
 
 When working with <strong>Ontologica</strong>, you should assume the following.</p>
 
@@ -212,8 +225,13 @@ It is minimalistic. We want to start with as little as we have to.
 
 <h5>It is hard to deny.</h5>
 
+<p>Imagine if someone denied that there are actually things, on the ground that the experience of recognizable things in the world around us is a product of our cognitive systems that chunk unorganized, continuous experience into discrete, patterned units. From this, they claim that "outside of the human mind" (Kant's <em>phenomena</em>), those things do not in fact exist.</p>
 
-imagien if someone said that things are created in our minds, thjey don exist inherently in the world. but then, so far as we know, what is the world made of? apart from an extreme answer of "i have no idea", even if we deny the human categories like trees and rocks and dissolve them into just the lowest physicla things, then we get atoms or subatomic particles. but if qunatum mechanics and platonism tells uthat physical relaity is itsef kind ofa virtual conept, made of pur einformation, or hat qunam mechanics shows there are not stable phyiscla entities at the bottom, then so what? now we can shift our desciriptn of what the world is tso say, wavefunctions, or, events in spacetime, or, the existence o certain functions, or laws, and the evolution of something htat is in coformace with those laws. thus, the notion that there are things is largel unavoidable, since we will need certain things in order to claim what the world is. (for example, "the world" is one usch thing)
+<p>Imagine that, when pressed, that person were asked, "What then does exist?" If they said, "The only thing that exists are atoms moving around", we might say, "Not so - modern physics says it is in fact subatomic particles". They might say, "Ok, yes - well, whatever modern physics tells us is the actual lowest level building blocks of reality." Even if that is the case, then there are still things. Therefore, this axiom woudl be compatible with such a worldview.</p>
+
+<p>But take it further. Claim that in fact, quantum mechanics says the universe is not locally real. There are not stable, conscribed things of "physical stuff" occupying volumes. Things come and go, they don't require consistency of identity, etc. No matter - then what is the system you describe? "Well, it's quantum wavefunctions; particles aren't so much waves as they are clouds of probability". Then so be it: what <em>actually</em> exists are probability clouds and wave functions; the rest is human fancy / fantasy / illusion.</p>
+
+<p>But say we take it further, and say, "But everything must be made of <em>something</em>". Max Tegmark says that as yo go further down, the whole notion of "physilac" disappears, and we are left mroe with something informational, even virtual. No matter: then what exists are certain formal laws or systems that control the evolution of some virtual bits of information: then that is what actually exists. And those are things.</p>
 
 <h5>It is unavoidable.</h5>
 
@@ -300,11 +318,11 @@ It is the first assertion in this theory because of its fundamentality.
   <h3>Axiom 2</h3>
 
 
-<p>There are things about things.</p>
+<p><em>There are things about things.</em></p>
 
 
 
-This notion has also been called "predicates" or "relations". Its essence is the observation that, for some given thing, one can ask something about that thing. For example, given a car, I can ask, "What is its color?", or, "Who are its friends?" A thing about a spoon is its size. A thing about the concept of democracy is its definition.
+<p>This notion has also been called "predicates" or "relations". Its essence is the observation that, for some given thing, one can ask something about that thing. For example, given a car, I can ask, "What is its color?", or, "Who are its friends?" A thing about a spoon is its size. A thing about the concept of democracy is its definition.</p>
 
 i like to call this an aboutness. similar to haskell currys term "functive", it combines functions and relations into something that requires something else. it is also similar to dependent entities in BFO, as well as depednent types in MLTT.
 
@@ -387,8 +405,160 @@ The rest of the theory I am still working on, so the following is a bit more ten
   
   Ontologica is based on the idea that there are "things".
 Ontologica is (etc.)  
+
+
+
+
+
+
+
+
+<p>Therefore, the formal model of Ontologica is roughly:</p>
+
+<ol>
+
+<li>An ontology is a collection of things.</li>
+
+<li>There are two fundamental kinds of things: things, and aboutnesses.</li>
+
+<li>(A thing can have multiple kinds.)</li>
+
+<li>An aboutness is also a thing.</li>
+
+<li>An ontology is a model of a world. It does not have to be true, or conform, in its intepretation, to "the real world / the thing around us".</li>
+
+<li>An ontology is generally created by a human (or, someone sentient). The human can decide and judge what things they want to add or exclude from their ontology.</li>
+
+<li>Of course, a human may often wish their ontology to try to accurately describe "the world", or, the world as they experience it, as they judge it to be.</li>
+
+<li>The human arbiter / creator can change their ontology by adding or remove things from it.</li>
+
+<li>There are two equivalent ways of things about "changing your ontology": one is that the old ontology is gone, and a new one has been created. The other is that the same ontology is still here, but "something about it" has changed. If "something about it" has changed, that can also be viewed as a change in quality of a thing (i.e., the vlaue a predicate takes), or it can be seen as the deletion of a statement-thing from the ontology (that that predicate holds true for that object) and teh addition of a new one.</li>
+
+<li>"Change" for thing sof stable entty across time can also be re-viewed as the creation or destructio of static, unchagning things. but that woudl imply that we are in a changing context (the ontology itself). but even that we can get rid of if we think reality is created anew every mment in time, for example. idk.</li>
+
+<li>on the other hand, how mgiht we move from the sense of something being added or deleted, to something just "changing"? need to think about it.</li>
+
+
+
+
+</ol>
+
   
   
+That means that in orde to explain why it is taht we can create triples
+
+
+a new document
+
+
+the problem with triples
+
+
+
+
+<h2 id="triples">The problem with triples.</h2>
+
+
+
+Assuming the mental (not "formal", just "intuitive") notion of "a collection of things, different kinds of things, and things that can be said about them" is well and clear, we need to try to explain what it means to not just add some arbitrary new element and assert things about it (we could take that route, though. Maybe that should be it???), ...
+
+<h3>Different points of view</h3>
+
+<h4>"Predicates are such that there is a semantically clear operation which constructs a precise kind of thing from a predicate, subject, and object."</h4>
+
+
+The idea here is
+
+
+
+<!-- ========================= -->
+<!--   FIRST DIAGRAM           -->
+<!-- ========================= -->
+
+<svg width="300" height="260" style="display:block; margin:30px auto;">
+  <!-- Box 1 -->
+  <rect x="60" y="10" width="180" height="40" rx="12"
+        fill="#141B2F" stroke="#6CB7FF" stroke-width="2"/>
+  <text x="150" y="35" fill="#F3F6FB" text-anchor="middle"
+        font-size="16">thing1</text>
+
+  <!-- Box 2 -->
+  <rect x="60" y="70" width="180" height="40" rx="12"
+        fill="#141B2F" stroke="#6CB7FF" stroke-width="2"/>
+  <text x="150" y="95" fill="#F3F6FB" text-anchor="middle"
+        font-size="16">some predicate</text>
+
+  <!-- Box 3 -->
+  <rect x="60" y="130" width="180" height="40" rx="12"
+        fill="#141B2F" stroke="#6CB7FF" stroke-width="2"/>
+  <text x="150" y="155" fill="#F3F6FB" text-anchor="middle"
+        font-size="16">thing2</text>
+</svg>
+
+<p style="font-style: italic; text-align:center; max-width:500px; margin:0 auto;">
+  I have 3 things here; I know what kind of thing they are; and I can choose
+  to apply a construction operation I know. VOILA.
+</p>
+
+
+
+<!-- ========================= -->
+<!--   SECOND DIAGRAM          -->
+<!-- ========================= -->
+
+<svg width="300" height="280" style="display:block; margin:40px auto;">
+  <!-- Circle -->
+  <circle cx="150" cy="130" r="110"
+          fill="#141B2F" stroke="#6CB7FF" stroke-width="3"/>
+
+  <!-- Text positions (triangular arrangement inside the circle) -->
+  <text x="150" y="70" fill="#F3F6FB" text-anchor="middle"
+        font-size="16">some predicate</text>
+
+  <text x="90" y="150" fill="#F3F6FB" text-anchor="middle"
+        font-size="16">thing1</text>
+
+  <text x="210" y="150" fill="#F3F6FB" text-anchor="middle"
+        font-size="16">thing2</text>
+</svg>
+
+<p style="font-style: italic; text-align:center; max-width:500px; margin:0 auto;">
+  I took the three things, and put them together.  
+  This has created a new thing: the result of applying that construction.
+</p>
+
+
+<h5>The problem</h5>
+
+The problem is that there is arguably pretty strong reason to believe, <em>there is not one way to put these three things together</em>. Equivalently, <em>there are multiple "creational actions/processes which can take in these three things and create something from them</em> - just as I couldl take peanut butter and jelly and bread, and make a peanut butter and jelly sandwich; but i could also blend them and make a peanut butter and jelly smoothie. In both cases, the final product seems, ontologically and mereologically, to clearly "be made of" the three things we used to make it, such that it can even be relationally decomposed into those things. Hence, there are different ways to put things together.
+
+
+
+The next problem
+
+should there be a neutral backgroun didea of "putting things together but without having specified in what way, what kidn of trhing was intended tob eproduced"? a downside with this is, it forces us to choose some kind of pre-type. maybe its. apradox, we wanted to avoid "neutarl operations", but we ended up creating one anywya. its like positing an "intermeidary stage" that doesnt realy eixst, doesn tactualy make sense.
+
+instead, we coudl say, there is an infintue of such dependent entiteis. but ther ies no "neutral" one. it isup to you to defien wha tkidn of creative action it is. we mighte ven have a rule from dpeendnt type theory on creatin such entites. hence, you acnnot just assume "we can make soemthing", you have ot show specifiaclly how to construct it. ?
+
+
+
+
+solution 1:
+abandonign creativ actions. you never "bind 3 elements". you only add whatever you want, say, a fact, and include that it relates, via intenral predicates, to othe entities?
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <h2>Other, more tentative axioms.</h2>
 
