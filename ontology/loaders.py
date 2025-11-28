@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from .normalize import normalize_json_data
+
 
 
 
@@ -110,17 +110,12 @@ def load_raw(path: Path, filetype: str):
 # 5. HIGH-LEVEL LOADER (the one Ontology.__init__ will call)
 # ---------------------------------------------------------
 
-
 def load_any(source):
     if source is None:
-        return {"nodes": [], "triples": []}
+        return ("none", None)
 
     path = validate_path(source)
     ext = detect_format(path)
     raw = load_raw(path, ext)
 
-    # call the proper normalizer
-    if ext == ".json":
-        return normalize_json_data(raw)
-
-    # other formats later...
+    return (ext, raw)
