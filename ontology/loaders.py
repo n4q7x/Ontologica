@@ -1,13 +1,41 @@
 from pathlib import Path
 
+from .normalize import normalize_json_data
+
+
 
 # ---------------------------------------------------------
 # 1. SUPPORTED EXTENSIONS AND PARSER DISPATCH TABLE
 # ---------------------------------------------------------
 
 # Replace these with real parser functions later
+
+
+
+import json
+
+
 def load_json(path: Path):
-    raise NotImplementedError
+    """
+    Load ontology data from a JSON file.
+    Returns whatever Python structure is inside the JSON (dict, list, etc).
+    
+    Raises:
+        ValueError: if JSON is syntactically invalid
+        OSError: if file cannot be opened
+    """
+    try:
+        with path.open("r", encoding="utf-8") as f:
+            return json.load(f)
+
+    except json.JSONDecodeError as e:
+        raise ValueError(f"Invalid JSON in '{path}': {e.msg} at line {e.lineno}") from e
+    
+    except OSError as e:
+        # covers permission denied, unreadable file, etc.
+        raise OSError(f"Could not open '{path}': {e.strerror}") from e
+
+
 
 def load_csv(path: Path):
     raise NotImplementedError
@@ -82,14 +110,17 @@ def load_raw(path: Path, filetype: str):
 # 5. HIGH-LEVEL LOADER (the one Ontology.__init__ will call)
 # ---------------------------------------------------------
 
-def load_any(source):
-    """Given a source (None, dict, or path), return parsed records."""
-    if source is None:
-        return set()    # your empty ontology
 
-    if isinstance(source, dict):
-        return source   # already "records"
+def load_any(source):
+    if source is None:
+        return {"nodes": [], "triples": []}
 
     path = validate_path(source)
-    filetype = detect_format(path)
-    return load_raw(path, filetype)
+    ext = detect_format(path)
+    raw = load_raw(path, ext)
+
+    # call the proper normalizer
+    if ext == ".json":
+        return normalize_json_data(raw)
+
+    # other formats later...
