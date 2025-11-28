@@ -4,35 +4,206 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ontologica</title>
+
+
+<style>
+
+/* --- Global Theme Variables ---------------------- */
+
+:root {
+  --bg: #0D1324;              /* deep midnight blue */
+  --bg-elevated: #141B2F;      /* elevated card blue */
+  --fg: #F3F6FB;               /* high-contrast white-blue */
+  --fg-muted: #A9B4C9;
+  --accent: #6CB7FF;
+  --accent-soft: rgba(108,183,255,0.14);
+  --radius: 14px;
+  --shadow: 0 6px 22px rgba(0,0,0,0.45);
+  --max-width: 900px;
+}
+
+/* --- Layout -------------------------------------- */
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: Inter, -apple-system, BlinkMacSystemFont,
+               "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.82;           /* more breathing room */
+  font-size: 20px;             /* larger, premium text */
+  max-width: var(--max-width);
+  margin: 70px auto;
+  padding: 0 40px 120px 40px;
+}
+
+/* --- Info Text (byline, copyright) --------------- */
+
+.byline, .copyright {
+  color: var(--fg-muted);
+  font-size: 0.95em;
+  margin: 0.1em 0;
+  opacity: 0.85;
+}
+
+/* --- Sexy Section Cards -------------------------- */
+
+section {
+  background: var(--bg-elevated);
+  padding: 40px 48px;
+  margin: 60px 0;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(255,255,255,0.07);
+}
+
+section:first-of-type {
+  margin-top: 0;
+}
+
+/* --- Headings (luxury typography) ---------------- */
+
+h1 {
+  font-size: 3.2em;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  margin-bottom: 0.2em;
+  margin-top: 0;
+  color: #FFFFFF;
+}
+
+h2 {
+  font-size: 2.1em;
+  font-weight: 600;
+  margin-top: 1.4em;
+  margin-bottom: 0.4em;
+}
+
+h3 {
+  font-size: 1.45em;
+  font-weight: 600;
+  margin-top: 1.6em;
+  margin-bottom: 0.35em;
+  color: var(--fg-muted);
+}
+
+h4 {
+  font-size: 1.25em;
+  font-weight: 600;
+  margin-top: 1.5em;
+  margin-bottom: 0.25em;
+  color: var(--fg-muted);
+}
+
+/* --- Paragraphs ---------------------------------- */
+
+p {
+  margin: 1.2em 0;
+}
+
+/* --- Lists --------------------------------------- */
+
+ul {
+  margin: 1.2em 0 1.2em 2em;
+}
+
+li {
+  margin: 0.5em 0;
+}
+
+/* --- Inline Code --------------------------------- */
+
+code {
+  background: var(--accent-soft);
+  color: var(--accent);
+  padding: 4px 8px;
+  border-radius: 8px;
+  font-family: Consolas, Monaco, monospace;
+  font-size: 0.95em;
+}
+
+/* --- Links --------------------------------------- */
+
+a {
+  color: var(--accent);
+  font-weight: 500;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* --- Horizontal Rule ------------------------------ */
+
+hr {
+  border: none;
+  border-top: 1px solid rgba(255,255,255,0.14);
+  margin: 3em 0;
+}
+
+</style>
+
+
+
 </head>
+
+
+
+
 <body>
-  
-    <h1>Ontologica</h1>
-    <h2>By Julius Hamilton</h2>
-  <p>All Rights Reserved.</p>
 
-  <h3>Conceptual Foundation</h3>
-
-  <p>
-In order to understand how to build ontologies in Ontologica, it is necessary to understand how Ontologica portrays the world to be. Whether or not you agree with the following statements, when using Ontologica, you can try to assume they are true, and think about how to represent whatever it is you want to describe or model, in accordance with these principles.
-  </p>
-
-  (formal declaration:
-  
-  henceforth, Ontologica referes to 1. a software application and 2. a specific data model 8formalizable for example in set theory, MLTT, etc. a formal structure whi h is taken to exist platonically.)
-
-  three layersL:
-
-  philosophial analysis
----
-  formal model
------
-  application
+  <header>
+  <h1>Ontologica's Conceptual Foundation</h1>
+  <address>By Julius Hamilton</address>
+  <p class="date">Late updated: November 28th, 2025</p>
+  <p class="version">v0.1.1</p>
+  <p class="copyright">All Rights Reserved.</p>
+</header>
 
 
-  <h4>1. There are things.</h4>
+<!--or, ontology specification? make it iso compliant?-->
 
-  <p>Depending on who you ask, this is either too trivial to require commentary; or true but a necessary axiomatic assertion; or full of ambiguity, paradox and confusion; or perhaps even false. Nonetheless, it is the first and most important assertion in the theory of this ontology: "<em>The world is made of things. Every thing is a thing. Anything that can be talked about is a thing. There is nothing that is not a thing.</em>"</p>
+
+<div>
+<h3>Definition</h3>
+
+"<strong>Ontologica</strong>" refers to:
+
+<ol>
+  <li>A philosophical stance.</li>
+  <li>A formal structure.</li>
+  <li>A software application.</li>
+</ol>
+
+</div>
+
+
+
+<h2>Introduction</h2>
+
+When working with <strong>Ontologica</strong>, you should assume the following.</p>
+
+
+
+
+
+  <h3>1. There are things.</h3>
+
+  <h4>Commentary</h4>
+
+  <p>Depending on who you ask, this is either:</p>
+
+  <ol>
+    
+    
+    <li>too trivial to require commentary;</li>
+    <li>or true but a necessary axiomatic assertion;</li>
+    <li>or full of ambiguity, paradox and confusion;</li>
+    <li>or perhaps even false.</li>
+    
+    
+    </ol>
+    
+    Nonetheless, it is the first and most important assertion in the theory of this ontology: "<em>The world is made of things. Every thing is a thing. Anything that can be talked about is a thing. There is nothing that is not a thing.</em>"</p>
 
   <p>'Thing' is the all-encompassing category. It should not be understood in a more restricted sense like "inanimate object", "physical object", or "concrete entity". 'Thing' does not impose qualitative constraints on what a thing can be like. It can even be used to talk about poor and vaguely defined things, things which we aren't even sure what they are, or if they exist.</p>
     
@@ -131,6 +302,21 @@ assertions vs observations
 
 
   but if there were not things, even then, the world wou ldhave to be made of htings at the bototm,w ouudl it not? even if not physicla things, i.e. subaotmic partiles, then its math. eevn if its quantum.a t some point, it becomes impossible to say that there are in fact not things.
+  
+
+
+
+
+  linguistic normalizioant of verbs. every sentence in this document about ontolgoic acan be conveted to a triple by an ai, but we estbalished like a style guide in that verbs should be changed to their subjunctve, not declaratvei form.
+
+
+
+
+  List of statements, like, ontology genreation form.
+  
+  Ontologica is based on the idea that there are "things".
+Ontologica is (etc.)  
+  
   
 </body>
 </html>
