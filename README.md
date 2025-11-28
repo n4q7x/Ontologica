@@ -75,7 +75,7 @@
 - You can use Ontologica for open-source intelligence.
 - You can use Ontologica to formalize law.
 - You can use Ontologica to formalize rule systems.
-
+- Ontologica can be used as a universal productivity tool.
 
 # Background
 

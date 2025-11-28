@@ -1,4 +1,7 @@
 [project]
-name = "ontologica"
-version = "0.1.0"
+name = "ontology"
+version = "0.1.1"
 description = "A tool for ontological modeling"
+
+[tool.setuptools]
+packages = ["ontology"]
