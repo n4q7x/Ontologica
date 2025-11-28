@@ -37,16 +37,20 @@ PARSERS = {
 # ---------------------------------------------------------
 # 2. VALIDATE PATH
 # ---------------------------------------------------------
-
 def validate_path(source) -> Path:
-    """Return a valid Path object or raise appropriate errors."""
     path = Path(source)
 
-    if not path.exists():
-        raise FileNotFoundError(f"No such file: {path}")
-
+    # 1. Must have an extension
     if path.suffix == "":
-        raise ValueError(f"File has no extension: {path}")
+        raise ValueError(f"File '{path}' has no extension.")
+
+    # 2. Must be a supported extension
+    if path.suffix.lower() not in SUPPORTED_EXTENSIONS:
+        raise ValueError(f"Unsupported file extension: {path.suffix}")
+
+    # 3. Must exist
+    if not path.exists():
+        raise FileNotFoundError(f"File not found: {path}")
 
     return path
 

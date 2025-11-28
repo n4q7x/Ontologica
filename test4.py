@@ -3,11 +3,9 @@
 
 from ontology import Ontology
 
-filepath = "badfilename"
-
 
 try:
-    ontology = Ontology(filepath)
-except FileNotFoundError:
-    print("File not found!")
+    ontology = Ontology("mydata")
+except ValueError:
+    print("File has no extension!")
 
