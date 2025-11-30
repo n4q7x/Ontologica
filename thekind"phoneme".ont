@@ -1,2 +1,18 @@
 This is further experimental prototyping for what it would be like to actually use Ontologica.
 
+Inagine a simple natural language interface consisting of the commands "include" and "assert".
+
+include "the phoneme "a""
+include "the kind "phoneme""
+include "the predicate "has as kind""
+include "the kind "predicate""
+include "the kind "kind""
+
+assert the phoneme a has as kind the kind phoneme
+assert the predicate has as kind has as kind the kind predicate
+assert the kind phoneme has as kind the kind kind
+assert the kind predicate has as kind the kind kind
+assert the kind kind has as kind the kind kind
+
+assert for all things, thing has as kind the kind kind implies thing does not have as kind the kind predicate
+(... - assert the three kinds are disjoint)
